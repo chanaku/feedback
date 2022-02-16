@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from "prop-types"
 
-function FeedbackStats() {
+function FeedbackStats({ feedback }) {
 //   calculating rating avg
   let average = feedback.reduce((acc,cur)=> {
    return acc+cur.rating
